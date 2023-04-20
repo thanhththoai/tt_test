@@ -1,0 +1,380 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+li, a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "a가을소풍B";
+  src: url("./fonts/a가을소풍B.ttf");
+}
+@font-face {
+  font-family: "a가을소풍M";
+  src: url("./fonts/a가을소풍M.ttf");
+}
+@font-face {
+  font-family: "NotoSansKR-Black";
+  src: url("./fonts/Noto_Sans_KR/NotoSansKR-Black.otf");
+}
+@font-face {
+  font-family: "NotoSansKR-Bold";
+  src: url("./fonts/Noto_Sans_KR/NotoSansKR-Bold.otf");
+}
+@font-face {
+  font-family: "NotoSansKR-Light";
+  src: url("./fonts/Noto_Sans_KR/NotoSansKR-Light.otf");
+}
+@font-face {
+  font-family: "NotoSansKR-Medium";
+  src: url("./fonts/Noto_Sans_KR/NotoSansKR-Medium.otf");
+}
+@font-face {
+  font-family: "NotoSansKR-Regular";
+  src: url("./fonts/Noto_Sans_KR/NotoSansKR-Regular.otf");
+}
+@font-face {
+  font-family: "NotoSansKR-Thin";
+  src: url("./fonts/Noto_Sans_KR/NotoSansKR-Thin.otf");
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.container-fluid {
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+body {
+  font-family: "NotoSansKR-Regular";
+  font-size: 18px;
+}
+
+section {
+  position: relative;
+}
+
+.header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  transition: 0.5s ease;
+}
+.header_menu {
+  margin-top: 20px;
+}
+.header_menu-list {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.header_menu-link {
+  color: #fff;
+  transition: color 0.25s linear;
+}
+.header_menu-link:hover {
+  font-weight: 700;
+  color: #fff;
+  text-decoration-line: none;
+}
+.header_menu-item {
+  list-style-type: none;
+  float: left;
+  margin-left: 45px;
+}
+.header_pr {
+  display: flex;
+  align-items: center;
+}
+.header_pr a {
+  color: #fff;
+}
+
+.logo {
+  font-family: "a가을소풍B";
+  margin-top: 20px;
+}
+.logo_text {
+  font-size: 15px;
+  color: #fff;
+}
+
+.btn {
+  width: 50%;
+}
+
+.sticky {
+  background: rgba(18, 53, 132, 0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(18, 53, 132, 0.8);
+}
+
+.bg-slide {
+  z-index: 777;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-slide .swiper-slide img {
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  pointer-events: none;
+}
+
+.media-icon {
+  z-index: 999;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 25%;
+  left: 87%;
+}
+
+.sub {
+  font-size: 17px;
+  width: 140px;
+  height: 160px;
+  background-color: yellow;
+  border: 2px;
+  border-radius: 25px;
+}
+
+.youtube img {
+  margin-left: 30px;
+  width: 40%;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.youtube p {
+  color: #000;
+  margin-left: 30px;
+}
+
+.service {
+  position: relative;
+  text-align: center;
+  font-family: "NotoSansKR-Black";
+  font-size: 38px;
+  background-color: #fff;
+  padding: 50px 30px;
+}
+.service_content {
+  text-align: center;
+}
+.service_content-header {
+  padding: 20px;
+}
+.service_content-text {
+  max-height: 50px;
+  text-align: center;
+  margin: 25px 5px;
+}
+.service_img {
+  width: 100%;
+  margin: 100px 20px;
+}
+
+.about {
+  background-image: url(./images/about-main.png);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+.about_img {
+  align-items: center;
+}
+.about_img img {
+  position: relative;
+  left: 27%;
+  width: 40%;
+  transform: translateX(0px);
+  opacity: 1;
+}
+.about_img img:hover {
+  transform: translateX(40px);
+  opacity: 1;
+  transition: 1s ease;
+  transition-delay: 0.3s;
+}
+.about_talk img {
+  position: absolute;
+  left: 28%;
+  top: 55%;
+}
+.about_title {
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+  color: #fff;
+}
+.about_text {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+.about_text span {
+  color: yellow;
+}
+
+.app {
+  background-color: #E3E7EB;
+}
+.app_contruct {
+  display: flex;
+  margin-top: 75px;
+  margin-bottom: -28px;
+}
+.app_contructs {
+  height: 180px;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  border: 1px solid #E3E7EB;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+}
+.app_contructs span {
+  font-family: "NotoSansKR-Black";
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.app_contructs p {
+  margin-top: 15px;
+  color: #686a6b;
+}
+.app_step {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.app_step li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 20px;
+}
+.app_step i {
+  display: none;
+}
+.app_progress {
+  width: 30px;
+  height: 30px;
+  margin: 25px;
+  border-radius: 50%;
+  background-color: #686a6b;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.app_progress::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 190px;
+  background-color: #686a6b;
+  right: 30px;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+.app_img {
+  margin-top: 90px;
+  margin-left: 170px;
+  display: none;
+}
+.app_img img {
+  width: 100%;
+}
+
+.one::after {
+  width: 0;
+  height: 0;
+}
+
+.app_progress.active {
+  background-color: #3F8CFF;
+}
+
+.app_progress.active::after {
+  background-color: #3F8CFF;
+}
+
+.app_contructs.active {
+  background-color: #3F8CFF;
+}
+.app_contructs.active span {
+  color: #fff;
+}
+.app_contructs.active p {
+  color: #d0d0d0;
+}
+
+.app_img.active {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
